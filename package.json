@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-tools-evalpoly-compile-c",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Compile a C function for evaluating a polynomial.",
   "license": "Apache-2.0",
   "author": {
