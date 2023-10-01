@@ -203,11 +203,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
@@ -223,11 +218,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-tools-evalpoly-compile-c.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-base-tools-evalpoly-compile-c
 
-[test-image]: https://github.com/stdlib-js/math-base-tools-evalpoly-compile-c/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/math-base-tools-evalpoly-compile-c/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/math-base-tools-evalpoly-compile-c/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/math-base-tools-evalpoly-compile-c/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-tools-evalpoly-compile-c/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/math-base-tools-evalpoly-compile-c?branch=v0.1.0
+[coverage-url]: https://codecov.io/github/stdlib-js/math-base-tools-evalpoly-compile-c?branch=main
 
 <!--
 
@@ -242,8 +237,6 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-tools-evalpoly-compile-c/main/LICENSE
 
 [@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly
 

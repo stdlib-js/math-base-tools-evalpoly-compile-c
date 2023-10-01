@@ -1,5 +1,24 @@
-"use strict";var _=function(f,p){return function(){return p||f((p={exports:{}}).exports,p),p.exports}};var x=_(function(q,v){
-var s=require("path").join,o=require('@stdlib/fs-read-file/dist').sync,i=require('@stdlib/string-replace/dist'),u=require('@stdlib/assert-is-integer/dist').isPrimitive,l=require('@stdlib/string-base-uppercase/dist'),d={encoding:"utf8"},y=s(__dirname,"templates"),E=o(s(y,"single_coefficient.c.txt"),d),c=o(s(y,"evalpoly.c.txt"),d),g=o(s(y,"empty.c.txt"),d),T=o(s(y,"loop.c.txt"),d);function L(f,p){var n,t,e,a,m,r;if(t={dtype:"double",name:"evalpoly",suffix:""},arguments.length>1&&(t.dtype=p.dtype||t.dtype,t.name=p.name||t.name),t.dtype==="float"&&(t.suffix="f"),a=f.length,a===0)return e=i(g,"{{dtype}}",t.dtype),e=i(e,"{{dtype_suffix}}",t.suffix),i(e,"{{fname}}",t.name);if(a===1)return e=f[0].toString(),u(f[0])&&(e+=".0"),e=i(E,"{{coefficient}}",e),e=i(e,"{{dtype}}",t.dtype),e=i(e,"{{dtype_suffix}}",t.suffix),i(e,"{{fname}}",t.name);if(m=a-1,a>500){for(e="",r=0;r<a;r++)e+="	"+f[r].toString(),u(f[r])&&(e+=".0"),e+="{{dtype_suffix}}",r<m&&(e+=",\n");return e=i(T,"{{coefficients}}",e),e=i(e,"{{num_coefficients}}",a.toString()),e=i(e,"{{dtype}}",t.dtype),e=i(e,"{{dtype_suffix}}",t.suffix),e=i(e,"{{fname}}",t.name),i(e,"{{FNAME}}",l(t.name))}for(n=f[0].toString(),u(f[0])&&(n+=".0{{dtype_suffix}}"),r=1;r<a;r++)n+=" + (x * ",r<m&&(n+="("),n+=f[r].toString(),u(f[r])&&(n+=".0"),n+="{{dtype_suffix}}";for(r=0;r<2*(a-1)-1;r++)n+=")";return e=f[0].toString(),u(f[0])&&(e+=".0"),e=i(c,"{{coefficient}}",e),e=i(e,"{{horner}}",n),e=i(e,"{{dtype}}",t.dtype),e=i(e,"{{dtype_suffix}}",t.suffix),i(e,"{{fname}}",t.name)}v.exports=L
-});var P=x();module.exports=P;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Compile a C function for evaluating a polynomial.
+*
+* @module @stdlib/math-base-tools-evalpoly-compile-c
+*
+* @example
+* var compile = require( '@stdlib/math-base-tools-evalpoly-compile-c' );
+*
+* var str = compile( [3.0,2.0,1.0] ); // 3*10^0 + 2*10^1 + 1*10^2
+* // returns <string>
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
