@@ -146,29 +146,14 @@ static float polyval123( const float x ) {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var Float64Array = require( '@stdlib/array-float64' );
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
 var compile = require( '@stdlib/math-base-tools-evalpoly-compile-c' );
 
-var coef;
-var sign;
-var str;
-var i;
-
-// Create an array of random coefficients...
-coef = new Float64Array( 10 );
-for ( i = 0; i < coef.length; i++ ) {
-    if ( randu() < 0.5 ) {
-        sign = -1.0;
-    } else {
-        sign = 1.0;
-    }
-    coef[ i ] = sign * round( randu()*100.0 );
-}
+// Create an array of random coefficients:
+var coef = discreteUniform( 10, -100, 100 );
 
 // Compile a function for evaluating a polynomial:
-str = compile( coef );
+var str = compile( coef );
 console.log( str );
 ```
 
@@ -202,6 +187,11 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
+
+## License
+
+See [LICENSE][stdlib-license].
+
 
 ## Copyright
 
@@ -237,6 +227,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-tools-evalpoly-compile-c/main/LICENSE
 
 [@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly
 
