@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.1.2">
 
-## Unreleased (2024-12-30)
+## 0.1.2 (2026-01-30)
 
 <section class="bug-fixes">
 
@@ -23,6 +23,8 @@
 
 <details>
 
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`65ddf8d`](https://github.com/stdlib-js/stdlib/commit/65ddf8d4d51ccfda52d1c5a06408e43fb386c27e) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`378c108`](https://github.com/stdlib-js/stdlib/commit/378c108278799749f256989970815ad6b263a3e8) - **fix:** ensure suffix is appended for non-integer values _(by Athan Reines)_
 -   [`8060caf`](https://github.com/stdlib-js/stdlib/commit/8060caf34407daeaddc41089a0521853710f40ef) - **fix:** allow array-like objects _(by Athan Reines)_
 -   [`c12e373`](https://github.com/stdlib-js/stdlib/commit/c12e373dd4082120edfa717bb39e737c49792a6f) - **docs:** update examples and improve type specificity _(by Athan Reines)_
@@ -37,9 +39,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
